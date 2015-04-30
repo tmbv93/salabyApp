@@ -1,0 +1,66 @@
+.top-bar {
+
+    background-color: #FFFFFF;
+    border-bottom: solid thin #dcdcdc;
+    color: #333;
+    margin-bottom: 1em;
+    height: 53px;
+}
+
+.right-header-section {
+    float: right;
+}
+
+.title-area {
+    height: 3.5em;
+    border: none;
+}
+
+.top-bar-section ul {
+    margin-top: 0px;
+    height: 100% !important;
+}
+
+.top-bar-section ul li a {
+    color: #333;
+    background-color: #FFFFFF !important;
+}
+
+.top-bar-section ul li a:hover {
+    background-color: #333 !important;
+}
+.top-bar img {
+max-height: 55px;
+
+}
+.top-bar.expanded .title-area {
+    background-color: #FFFFFF;
+}
+
+.top-bar .toggle-topbar.menu-icon a,
+.toggle-topbar.menu-icon {
+    color: #333;
+}
+
+.top-bar .toggle-topbar.menu-icon a span::after {
+box-shadow: 0 0px 0 1px grey, 0 7px 0 1px grey, 0 14px 0 1px grey;
+}
+
+
+#hover1 li {
+    display: block;
+    width: 100%;
+}
+
+#hover1 ul li :hover {
+    color: black;
+}
+
+/*HENTER FRA FOUNDATION CSS*/
+
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+    padding: 0 15px;
+    line-height: 55px;
+    color: white;
+    background: #008cba;
+  }

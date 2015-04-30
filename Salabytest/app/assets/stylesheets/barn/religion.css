@@ -1,0 +1,192 @@
+/*---------Headerområde!!---------*/
+
+#mainHeader {
+    width: 100%;
+    background-color: #f2f2f2;
+    border-bottom: solid thin #222;
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 10;
+}
+#siteLogo {
+    width: 200px;
+    z-index: 1000 !important;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+.menuHeader {
+    width: 100%;
+    height: 25px;
+    top: 25px;
+    position: relative;
+}
+/*---------Headerområde SLUTT!!---------*/
+
+/*-------BREADCRUMBS---------*/
+
+/*.breadcrumbs{
+    width: 970px;
+    margin-left: 150px;
+    background-color: rgb(244, 244, 244);
+    opacity: 0.8;
+}*/
+
+
+
+
+
+/*-------BREADCRUMBS SLUTT!---------*/
+
+
+
+/*---------Hovedområde!!---------*/
+/*----------Hovedmeny!!-----------*/
+
+.menu-option {
+    /*  border: solid thin #444;
+    background-color: white;*/
+
+    text-align: center;
+    margin-top: 30px;
+}
+.menu-option img {
+    max-width: 300px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out 0s;
+    -webkit-transition: all 0.15s ease-in-out 0s;
+    -moz-transition: all 0.15s ease-in-out 0s;
+    -o-transition: all 0.15s ease-in-out 0s;
+}
+.menu-option img:hover {
+    transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    /* IE 9 */
+
+    -webkit-transform: scale(1.1, 1.1);
+    /* Chrome, Safari, Opera */
+
+
+}
+#mainMenu {
+    margin-top: 40px;
+}
+
+
+#backArrow{
+    position: absolute;
+    margin-top: 10px;
+    width: 50px;
+    right: 20px;
+    -webkit-transition: all 0.15s ease-in-out 0s;
+    -moz-transition: all 0.15s ease-in-out 0s;
+    -o-transition: all 0.15s ease-in-out 0s;
+}
+
+#backArrow:hover{
+    transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1, 1.1);
+    /* Chrome, Safari, Opera */
+}
+
+
+/*----------Hovedmeny SLUTT!!-----------*/
+
+div#religion-background-wrapper {
+    background: url("rlebakgrunn.jpg") no-repeat fixed;
+    background-attachment: fixed;
+    background-color: white;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+.hinduisme {
+
+}
+/*----------Gjelder kun på religion bildene på RLE siden-----------*/
+
+
+
+.bilde-hover {
+    margin-bottom: 15px;
+}
+/*----------SLUTT!!-----------*/
+
+
+
+.fag img {
+    max-width: 300px;
+}
+/*---------Hovedområde SLUTT!!---------*/
+
+/*HIDE ELEMENTS*/
+
+.kanalS {
+    display: none;
+}
+.barnehage {
+    /*display: none;*/
+}
+#test{
+    min-height: 100%;
+}
+
+.test{
+    min-height: 100%;
+    margin-top: 0;
+}
+
+
+.test-section{
+    min-height: 100%;
+    margin-bottom: 0;
+    margin-top: -16px;
+
+}
+
+
+@media only screen and (min-width: 768px) {
+    .cd-top {
+        right: 20px;
+        bottom: 20px;
+    }
+
+    #backArrow{
+        position: absolute;
+        margin-top: 10px;
+        width: 80px;
+        right: 35px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .cd-top {
+        height: 60px;
+        width: 60px;
+        right: 30px;
+        bottom: 30px;
+    }
+}
+
+
+@media only screen and (min-width: 40.063em) {
+.top-bar-section li:not(.has-form) a:not(.button) {
+line-height: 52px;
+}
+}
+
+@media only screen and (min-width: 40.063em) {
+.contain-to-grid .top-bar {
+max-width: 69.5rem;
+
+}}
+
+.contain-to-grid {
+    background-color: #f2f2f2;
+}
+
+#wrapper {
+    max-height: 100%;
+}

@@ -1,0 +1,40 @@
+// Foundation by ZURB
+// foundation.zurb.com
+// Licensed under MIT Open Source
+
+
+// Allows the use of rem-calc() or lower-bound() in your settings
+@import "foundation/functions";
+
+
+// We use this to control whether or not CSS classes come through in the gem files.
+$include-html-classes: true;
+$include-print-styles: true;
+$include-html-global-classes: true;
+$include-html-classes: true;
+
+@import 'foundation';
+
+ .top-bar-section li:not(.has-form) a:not(.button) {
+    padding: 0 22px;
+    line-height: 45px;
+    background: #333333;
+ }
+.top-bar-section ul li > a {
+  display: block;
+  width: 100%;
+  color: white;
+  padding: 12px 0 12px 0;
+  padding-left: 15px;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 1.15rem;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.breadcrumbs {
+  background-color: rgb(244, 244, 244) !important;
+   margin-left:15px;
+    margin-right: 15px;
+}
+

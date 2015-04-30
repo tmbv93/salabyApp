@@ -1,0 +1,16 @@
+<img draggable="false" src="/assets/barn/skoleveien.jpg" id="background-image" alt="bakgrunnsbilde">
+<%=render 'shared/page_header' %>
+
+<% if logged_in? && current_user.class_admin?%>
+
+    <h1>Legg til klasse</h1>
+
+    <%= render 'form' %>
+
+    <% else %>
+
+    <p>Du har ikke adgang til denne siden. Logg inn for å fortsette</p>
+
+<%end%>
+
+<%= link_to "Tilbake", :back %>

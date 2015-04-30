@@ -1,0 +1,87 @@
+<img draggable="false" src="/assets/barn/skoleveien.jpg" id="background-image" alt="bakgrunnsbilde">
+<div id="UserWrapper">
+    <div class="row">
+        <div class="large-12 columns">
+
+          <div class="flash-message-box"><strong class="flash-message-text"><%= flash[:alert] %></strong></div>
+
+                <div class="panel">
+                <div id="user-information">
+                        <h1><%= @user.username %></h1>
+                        <p><strong>Navn: </strong><%= @user.first_name %> <%= @user.last_name %></p>
+                        <p><strong>Klasse: </strong>
+
+                          <% if departments = get_departments(@user) %>
+                             <% departments.each do |dep|%>
+                             <%= link_to dep.name, department_path(dep.id)%>
+
+                              </p>
+
+                    <% end %>
+
+                    
+                    <strong>Beskrivelse: </strong>
+                    <p><%= @user.description %></p>
+                         <% if is_me? @user %>
+                            <%= link_to 'Rediger profil', edit_user_path(@user) %>
+                          <% end %>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div class="row">
+                    <% if logged_in? %>
+                    <div class="large-8 columns">
+                  <div class="panel">
+                    <div id="classesArea">
+
+                      <!--KLASSER-->
+                      <h3>Mine klasser</h3>
+
+                      <% if departments = get_departments(@user) %>
+                        <ul><% departments.each do |dep|%>
+                            <li><%= link_to dep.name, department_path(dep.id)%></li>
+                            <% end %>
+                        </ul>
+                            <% end %>
+                      <% if is_me? (@user) %>
+                        
+                      <%=link_to "Opprett ny klasse", new_department_path %>
+                            <% end %>
+
+                    </div>
+                  </div>
+                </div>
+                    <!--LEKSER-->
+                    <% else %>
+                    <div class="large-8 columns">
+                            <div class="panel">
+                                <div id="homeworkArea">    
+                                    <h3>Lekser</h3>
+                                  <% #Lekser renderes her %>
+                                </div>
+                        </div>
+                    </div>
+                    <% end %>
+                    <!--FAVORITTER-->
+                    <div class="large-4 columns">
+                        <div class="panel">
+                            <div id="favorites">  
+                                <h3>Favoritter</h3>
+                                <ul>
+                                  <!--RENDER FAVORITT FORM HER-->
+                                    <li>RLE</li>
+                                    <li>NORSK</li>
+                                    <li>SAMFUNN</li>
+                                    <li>RLE -> HINDUISME</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                  <%end%>
+

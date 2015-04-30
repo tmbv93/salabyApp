@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Salaby.no | En læringsportal</title>
+
+    <%= stylesheet_link_tag    "application", debug: :false %>
+    <%= javascript_include_tag "vendor/modernizr", debug: :false %>
+    <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js","jquery-rails.js"%>
+    <%= csrf_meta_tags %>
+    <%= favicon_link_tag 'favicon.ico' %>
+  </head>
+
+  <body>
+
+    <% if @include_header_info %>
+
+      <%=render 'shared/page_header_info' %>
+
+    <% else %>
+
+        <%= render 'shared/page_header' unless @exclude_header %>
+
+    <% end %>
+
+    <%= yield %>
+    <%= javascript_include_tag "application" %>
+
+    <%= render 'shared/page_footer' unless @exclude_footer %>
+  </body>
+
+</html>
