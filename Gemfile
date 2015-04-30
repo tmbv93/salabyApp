@@ -8,7 +8,13 @@ gem 'rails', '4.1.8'
 gem 'foundation-rails', '5.4.3.1'
 
 # Use sqlite3 as the database for Active Record (disabled for deployment)
-#gem 'sqlite3'
+group :development, :test do
+   gem 'sqlite3'
+end
+
+group :production do
+  gem 'mysql'
+end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
