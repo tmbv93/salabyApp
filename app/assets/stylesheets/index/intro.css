@@ -1,0 +1,155 @@
+.synlig {
+    color: pink;
+    font-size: 15pt;
+}
+
+/****************************************************CONSTRUCTORS********************/
+body {
+    /*background-image: url(/assets/index/skoleveien.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: slapstick;
+    src: url(/assets/SF_Slapstick_Comic.ttf);
+};
+
+
+#background_image{
+      position: fixed; 
+      top: 0; 
+      left: 0; 
+      min-width: 100em;
+      min-height: 100%;
+}
+
+/*******************************************************************************************/
+/*ADULT SECTION STYLES*/
+
+#adultSection {
+    max-height: 20em;
+    max-width: 100%;
+    -webkit-transform: rotate(-40deg);
+    -moz-transform: rotate(-40deg);
+    -o-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+    
+    position: absolute;
+    top: -12em;
+    left: -25em;
+    overflow: hidden;
+    border-bottom: black solid 5px;
+
+}
+
+#adultSection img {
+    width: 70%;
+    transition: .2s all ease-in-out 0s;
+}
+
+#adultSection img:hover {
+    -webkit-transform: scale(1.1,1.1);
+    -moz-transform: scale(1.1,1.1);
+    -o-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
+}
+
+
+
+
+/*******************************************************************************************/
+/*CHILD SECTION STYLES*/
+
+#childSection input[type="submit"]{
+    font-family: slapstick;
+    font-size: 20pt;
+}
+
+input[type="text"],input[type="password"] {
+    font-family: helvetica;
+}
+#childSection {
+    position: absolute;
+    right: 20em;
+    bottom: 0px;
+    height: auto;
+    padding: 5px;
+    width: 400px;
+    border-radius: 20px;
+    border: outset  #CCCCFF;
+    background-color: #FAFAFF;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+    margin-bottom: 5em;
+
+    
+}
+
+#childSection label {
+    color: black;
+}
+
+#childSection h2 {
+    color: darkblue;
+    font-family: slapstick;
+}
+
+#personPos {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 10em;
+    
+}
+
+#personPos img {
+    min-width: 20em;
+}
+/*
+
+
+/***************MOBIL*********************/
+@media only screen and (max-width: 40em) {
+
+    
+    #childSection {
+    position: absolute;
+    min-width: 100%;
+    z-index: 2;  
+    right: 1px;
+    }
+    
+    #personPos {
+    display: none;
+}
+    
+    
+    
+
+/*****************ADULT SECTION MOBIL**************/
+#adultSection {
+    max-height: 50%;
+    min-width: 130%;
+    -webkit-transform: rotate(0deg);
+    position: absolute;
+    top: -5em;
+    left: -5em;
+    overflow: hidden;
+    border-bottom: black solid 5px;
+
+}
+
+#adultSection img {
+    -webkit-transform: rotate(-10deg);
+    margin-top: 0em;
+    min-width: 50em;
+    transition: .2s all ease-in-out 0s;
+}
+
+#adultSection img:hover {
+    -webkit-transform: rotate(-10deg) scale(1,1);
+    opacity: 0.5;
+}
+
+}

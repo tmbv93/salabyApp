@@ -1,0 +1,37 @@
+/*
+ *= require foundation_and_overrides
+ *= require_tree .
+ *= require_self
+ *= require jquery-ui
+ */
+
+img{
+	-webkit-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+}
+
+.backgroundImage{
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100em;
+  min-height: 100%;
+}
+
+/* fjerner foundation javascript...*/
+.f-topbar-fixed{
+	padding-top: 0!important;
+}
+
+.topMarg {
+    margin-top: 65px;
+}
+
+
+/* Overflow control */
+/* body {
+    overflow:scroll;
+    overflow-x: hidden;
+}
+*/

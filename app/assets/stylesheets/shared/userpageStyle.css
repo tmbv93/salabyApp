@@ -1,0 +1,29 @@
+#contentArea {
+
+}
+
+#favorites{
+
+}
+
+#userInfo{
+    display: none;
+}
+
+#UserWrapper h1 {
+    color: red;
+}
+
+
+#UserWrapper textArea {
+    resize: none;
+    height: 200px;
+}
+
+#bgUser img{
+  width: 100%;
+}
+
+#UserWrapper{
+    min-height: 90%;
+}

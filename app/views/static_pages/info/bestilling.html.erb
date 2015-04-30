@@ -1,0 +1,92 @@
+
+
+
+<div id="wrapperVoksen">
+  <!--SLIDER-->
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="row">
+        <div class="large-12 columns">
+            <%= render 'static_pages/info/page_information_banner.html.erb' %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--OMRÅDE FOR ARTIKLER-->
+  <div class="row">
+    <div class="large-12 columns">
+      <h1>Bestilling</h1>
+    </div>
+  </div>
+  <div id="paymentArea">
+    <div class="row">
+      <div class="large-12 columns">
+        <label>Velg type</label>
+        <input type="radio" name="kommune" value="Kommune" id="kommune">
+        <label for="kommune">Kommune</label>
+        <input type="radio" name="skole" value="Skole" id="skole">
+        <label for="skole">Skole</label>
+        <input type="radio" name="barnehage" value="Barnehagen" id="barnehage">
+        <label for="barnehage">Barnehage</label>
+      </div>
+      <div class="row">
+        <div class="large-6 columns">
+          <label>Referanse navn
+            <input type="text" placeholder="Referanse navn" />
+          </label>
+        </div>
+        <div class="large-6 columns">
+          <label>Telefon nummer
+            <input type="text" placeholder="Telefon nummer" />
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <label>Skole
+            <input type="text" placeholder="Skole" />
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <fieldset>
+          <legend>Valg av produkt</legend>
+          <div class="large-6 columns">
+            <label>Velg produkt:
+              <select>
+                <option value="husker">Barnehage</option>
+                <option value="starbuck">Skoleveien</option>
+                <option value="hotdog">Kanal S</option>
+                <option value="apollo">MFL</option>
+              </select>
+            </label>
+          </div>
+          <div class="large-4 columns">
+            <label>Antall elever
+              <input type="text" placeholder="Antall elever" />
+            </label>
+          </div>
+          <div class="large-2 columns">
+            <input class="button" type="button" value="Legg til valg   " />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Valgte produkter</legend>
+          Det finnes ingen valgte produkter.
+        </fieldset>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <label>Kommentar:
+            <textarea placeholder="Kommentar"></textarea>
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <input class="button expand" type="button" value="Send bestilling">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

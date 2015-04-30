@@ -1,0 +1,53 @@
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="javascripts/jquery.hideseek.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#search').hideseek();
+});
+
+</script>
+<div id="wrapperVoksen">
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="row">
+        <div class="large-12 columns">
+            <%= render 'static_pages/info/page_information_banner.html.erb' %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="kompetanse">
+    <!--OMRÅDE FOR ARTIKLER-->
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Kompetansemål</h1>
+        <!-- Also works with <dl>'s and <dt>'s in place of <ul>'s and <li>'s. -->
+        <dl class="sub-nav">
+          <dt>Filter:</dt>
+              <dd><a id="engelskBtn" href="#engelskAco">Engelsk</a></dd>
+              <dd><a id="norskBtn" href="#norskAco">Norsk</a></dd>
+              <dd><a id="naturBtn" href="#naturAco">Naturfag</a></dd>
+              <dd><a id="kohBtn" href="#kohAco">Kunst og Håndverk</a></dd>
+              <dd><a id="mohBtn" href="#mohAco">Mat og Helse</a></dd>
+              <dd><a id="rleBtn" href="#rleAco">RLE</a></dd>
+              <dd><a id="musikkBtn" href="#musikkAco">Musikk</a></dd>
+              <dd><a id="matteBtn" href="#matteAco">Mattematikk</a></dd>
+              <dd><a id="samfunnBtn" href="#samfunnAco">Samfunnsfag</a></dd>
+        </dl>
+
+        <div id="innholdWrapper">
+          <!--ACCORD START-->
+            
+            <input id="search" name="search" placeholder="Søk etter fag..." type="text" data-list=".list">
+            <ul class="list">
+                  <li>HELLO</li>
+                  <li>SOMETHING</li>
+                  <li>APPLE</li>
+                  <li>PEAR</li>
+                  <li>ORANGE</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,47 @@
+@media only screen and (max-width: 40em) {
+  
+    .barn-meny{
+        display: none;
+    }
+    #barnehageButtonMobil, #skoleveienButtonMobil, 
+    #kanalSButtonMobil, #MFLButtonMobil{
+    	display: block;
+    }
+    /*må finne en annen måte å gjemme elementene på 
+    når man går fra stor til liten skjerm!!...*/
+   /* .align-center{
+    	display: none;
+    }*/
+
+    #barnehageButtonMobil{
+        margin-top: 50px;
+    }
+
+    .menu-option img{
+    	max-width: 200px;
+    }
+
+    #skoleveienMenu .menu-option img{
+        max-width: 150px;
+    } 
+
+    .columns .menu-option{
+    	margin-top: 20px;
+    }
+
+    #footer{
+        margin-top: 80px;
+    }
+
+    .kanalS,.mfl,.menu, .barnehage {
+        margin-bottom: 0;
+    }
+
+    .breadcrumbs{
+        max-width: 100%;
+        margin-left: 15px;
+        background-color: rgb(244, 244, 244);
+        opacity: 0.8;
+    }   
+    
+}

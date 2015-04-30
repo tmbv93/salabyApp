@@ -1,0 +1,31 @@
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+  $(function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "content"
+    });
+  });
+  </script>
+<div id="wrapperVoksen">
+  <!--SLIDER-->
+  <div class="row">
+    <div class="large-12 columns">
+        <%= render 'static_pages/info/page_information_banner.html.erb' %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div id="articleOmrade">
+    <div class="large-2 small-12 columns">
+          
+          <%= render 'shared/page_sidebar_info.html.erb' %>
+      </div>
+      <!--KODE BLOKK FOR HVER ARTIKKEL-->
+      <div class="large-10 small-12 columns">
+
+              <%= render 'shared/page_information_accordion.html.erb' %>
+      <!--KODE BLOKK FOR HVER ARTIKKEL SLUTT-->
+
+    </div>
+  </div>
+    </div>

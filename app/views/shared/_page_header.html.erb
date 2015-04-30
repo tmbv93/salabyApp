@@ -1,0 +1,39 @@
+<header>
+
+<!--MENU-->
+<div class="fixed">
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+
+        <%=link_to image_tag("logos/salaby_logo_enkel_rod.png", border: 0), static_pages_barn_forside_path, {class: 'dock-item'}%>
+
+    </ul>
+
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right-header-section">
+        <li><%=link_to "Hjem", static_pages_barn_forside_path %>
+        </li>
+        <!--SCRIPT FOR Å SJEKKE OM BRUKER ER LOGGET INN-->
+        <% if logged_in? %>
+          <li>
+
+            <a href="#" data-dropdown="hover1" data-options="is_hover:true; hover_timeout:5000"><%= current_user.username %></a>
+
+            <ul id="hover1" class="f-dropdown" data-dropdown-content>
+              <li><%= link_to "Min side", user_path(current_user) %></li>
+              <li><%= link_to "Logg ut", logout_path %></li>
+            </ul>
+
+         </li>
+        <% else %>
+            <li><%= link_to "Logg inn", login_path %></li>
+        <% end %>
+        <li><%=link_to "Til voksenside", static_pages_info_forside_path %>
+        </li>
+      </ul>
+    </section>
+  </nav>
+</div>
+</header>
+<div class="topMarg"></div>
